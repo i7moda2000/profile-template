@@ -1,0 +1,9 @@
+footer {
+
+    font-size: 0.6em;
+    vertical-align: text-bottom;
+    text-align: center;
+  }
+  footer a {
+    font-weight: bold;
+  }

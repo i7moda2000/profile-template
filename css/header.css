@@ -1,0 +1,21 @@
+
+.nav {
+/*		border-bottom: 1px solid var( --divider-color);*/
+		padding: 30px;
+}
+
+.nav-list {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	gap: 9em;
+}
+
+
+header {
+	position: relative;
+}
+#theme-btn {
+position: absolute;
+margin: 10px;
+}
