@@ -64,6 +64,7 @@ img.work-img {
 }
 .work-links {
 	text-align: right;
+	font-size: 1.5em;
 }
 
 @media all and (min-width: 100px) and (max-width:500px) {
@@ -77,6 +78,9 @@ img.work-img {
 .work-info {
 	order: 1;
 	margin-right: 0;
+}
+.main-head div  {
+	cursor: default;
 }
 
 

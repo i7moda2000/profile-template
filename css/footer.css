@@ -1,9 +1,18 @@
 footer {
+  padding:20px;
+  font-size: 0.6em;
+  text-align: center;
 
-    font-size: 0.6em;
-    vertical-align: text-bottom;
-    text-align: center;
   }
   footer a {
     font-weight: bold;
+  }
+
+
+  @media all and (min-width: 100px) and (max-width: 500px) {
+    footer {
+      padding: calc((90px - 14px)/2)  24px;
+      margin-top: 10em;
+
+    }
   }

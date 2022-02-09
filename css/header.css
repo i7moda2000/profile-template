@@ -12,10 +12,82 @@
 }
 
 
+.phone-nav-list {
+	height: 100%;
+	z-index: 999;
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding-top: 60px; 
+  transition: 0.5s;
+	list-style: none;
+	width:  0;
+	background: #111;
+	border-left: black 1px solid;
+	color: white ;
+	box-shadow: 1px 0 3px 4px rgba(20,20,20,0.4);
+
+
+}
+.phone-nav-list li a {
+	color: white !important ;
+}
+.phone-nav-list li  {
+padding: 20px  ;
+text-align: center;
+}
+.phone-nav-list li:not(:last-child) {
+	border-bottom: 1px solid var(--divider-color);
+	border-radius: 15px;
+	
+
+
+}
+
+
+
+
+
+
 header {
 	position: relative;
 }
-#theme-btn {
+#theme-btn , .close-btn , .open-btn {
 position: absolute;
 margin: 10px;
+
+}
+#theme-btn {
+	top:  0;
+	left: 0;
+	font-size: 1.3em;
+	cursor: pointer;
+}
+
+.open-btn {
+	font-size: 1.5em;
+	top:  0;
+	right: 0;
+	display: none;
+
+}
+.close-btn {
+	top:  0;
+	left: 0;
+	font-size: 1.5em;
+}
+
+
+
+@media all and (min-width: 100px) and (max-width: 500px) {
+	.nav-list {
+		display: none;
+	}
+	.open-btn {
+		display: block;
+	}
+	#theme-btn {
+		cursor: default;
+	}
+
 }

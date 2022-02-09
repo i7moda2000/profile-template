@@ -72,13 +72,7 @@ function lightTheme() {
 
 
 }
-const btn = document.querySelector(".hidden-btn")
-window.onscroll = () => {scrollFunction()};
-
-btn.onclick = () => {
-	document.body.scrollTop = 0; // For Safari
-	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+const btn = document.querySelector(".back-to-top-btn")
 
 
 function scrollFunction() {
@@ -94,7 +88,22 @@ function scrollFunction() {
 
 
 
+
 document.querySelector("#theme-btn").addEventListener("click", themeToggle);
+
+const openBtn = document.querySelector(".open-btn").addEventListener("click",() => {
+
+	document.querySelector(".phone-nav-list").style.width = "300px"
+	openBtn.style.display = "none"
+
+
+})
+document.querySelector(".close-btn").addEventListener("click",() => {
+
+	document.querySelector(".phone-nav-list").style.width = "0"
+
+
+})
 
 
 if(window.localStorage.getItem("theme") === "light"){
@@ -108,9 +117,21 @@ else {
 
 
 
+window.onscroll = () => {scrollFunction()};
+
+btn.onclick = () => {
+	document.body.scrollTop = 0; // For Safari
+	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+
+
+
 document.querySelector(".main-head div").addEventListener("click",() => {
 
 
 document.querySelector(".work-box-cont").scrollIntoView()
 
 })
+
+
